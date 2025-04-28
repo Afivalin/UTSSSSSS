@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="projects-section">
+    <h2>My Projects</h2>
+
+    <div class="project-number">
+        <p>1. Project Arduino</p>
+        <p>Project ini dilakukan saat saya semester 1 sebagai tugas akhir Mata Kuliah Pemrograman 1. Saya membuat project arduino untuk mendeteksi gas yang bocor.</p>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='gambar/arduino project.jpg') }}" alt="Arduino" />
+        </div>
+    </div>
+
+    <div class="project-number">
+        <p>2. Project NPM Tag</p>
+        <p>Project ini dibuaat saat semester 1 sebagai tugas Ospek Jurusan.</p>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='gambar/npm tag.jpg') }}" alt="NPM Tag" />
+        </div>
+    </div>
+
+    <div class="project-number">
+        <p>3. Project OKK</p>
+        <P>Saya sebagai Ketua Project Olah Kreativitas dan Kewirausahaan yang diaksanakan sebagai kewajiban tugas matkul untuk mendapat nilai Mata Kuliah OKK. Kami melakukan kegiatan Aksi Sosial dengan melakukan penyuluhan pentingnya makanan bergizi kepada anak SD kelas 2.</P>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='gambar/OKK.jpg') }}" alt="OKK" />
+        </div>
+    </div>
+</section>
+{% endblock %}
